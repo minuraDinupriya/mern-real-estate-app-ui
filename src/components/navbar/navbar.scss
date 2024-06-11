@@ -19,7 +19,6 @@ nav {
 
   .left {
     flex: 3;
-    background: aqua;
     display: flex;
     align-items: center;
     gap: 50px;
@@ -49,12 +48,15 @@ nav {
 
   .right {
     flex: 2;
-    background-color: greenyellow;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     background-color: #fcf5f3;
     height: 100%;
+
+    @include md{
+        background-color: transparent;
+    }
 
     a {
       padding: 12px 24px;
@@ -64,6 +66,29 @@ nav {
       background-color: #fece51;
     }
 
-    
+    .menuIcon{
+        display: none;
+
+        img{
+            width: 36px;
+            height: 36px;
+            cursor: pointer;
+        }
+        
+        @include sm{
+            display: initial;
+        }
+    }
+
+    .menu{
+        position: absolute;
+        background-color: black;
+        color: white;
+        height: 100vh;
+        top: 0;
+        right: -50%;
+        width: 50%;
+        transition: all 1s ease;
+    }
   }
 }
