@@ -68,6 +68,7 @@ nav {
 
     .menuIcon{
         display: none;
+        z-index: 999;
 
         img{
             width: 36px;
@@ -89,6 +90,10 @@ nav {
         right: -50%;
         width: 50%;
         transition: all 1s ease;
+
+        &.active{
+          right: 0;
+        }
     }
   }
 }
