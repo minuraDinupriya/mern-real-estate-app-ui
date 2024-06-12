@@ -2,7 +2,12 @@ import "./homePage.scss";
 
 function HomePage(){
     return(
-        <div>Home</div>
+        <div className="homePage">
+            <div className="textContainer">text</div>
+            <div className="imgContainer">
+                <img src="/bg.png" alt=""></img>
+            </div>
+        </div>
     )
 }
 
