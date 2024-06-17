@@ -27,5 +27,6 @@
 
   .content {
     flex: 1;
+    height: calc(100vh - 100px); //nattan display ek uparimeta wada thw 100px thiyenw kiyl hithagen pennanne.. 100px yanne navbar ekt
   }
 }
