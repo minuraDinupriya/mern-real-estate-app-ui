@@ -1,3 +1,62 @@
-.profilePage{
-    
+.profilePage {
+  display: flex;
+  height: 100%;
+
+  .details {
+    flex: 3;
+    overflow: scroll;
+    padding-bottom: 50px;
+
+    .wrapper {
+      padding-right: 50px;
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+
+      .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1{
+          font-weight: 300;
+        }
+
+        button{
+          padding: 12px 24px;
+          background-color: #fece51;
+          cursor: pointer;
+          border: none;
+        }
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        img {
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        span {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+        }
+      }
+    }
+  }
+  .chatContainer {
+    flex: 2;
+    height: 100%;
+    background-color: #fcf5f3;
+
+    .wrapper {
+      padding: 0px 20px;
+    }
+  }
 }
