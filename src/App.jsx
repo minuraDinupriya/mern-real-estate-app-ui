@@ -10,6 +10,7 @@ import Register from "./pages/register/register";
 import { RequireAuth } from "./routes/layout/layout";
 import ProfileUpdatePage from "./pages/profileUpdatePage/profileUpdatePage";
 import NewPostPage from "./pages/newPostPage/newPostPage";
+import { singlePageLoader } from "./lib/loaders";
 
 function App() {
   const router = createBrowserRouter([
@@ -33,6 +34,7 @@ function App() {
         {
           path: "/login",
           element: <Login />,
+          loader: singlePageLoader,
         },
         {
           path: "/register",
