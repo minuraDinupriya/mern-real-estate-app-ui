@@ -3,7 +3,7 @@ import List from "../../components/list/List";
 import "./profilePage.scss";
 import apiRequest from "../../lib/apiRequest";
 import { Await, Link, useLoaderData, useNavigate } from "react-router-dom";
-import { Suspense, useContext, useEffect } from "react";
+import { Suspense, useContext } from "react";
 import { AuthContext } from "../../context/AuthContext";
 
 function ProfilePage() {
@@ -79,7 +79,7 @@ function ProfilePage() {
               resolve={data.chatResponse}
               errorElement={<p>Error loading chats!</p>}
             >
-              {(chatResponse) => <Chat chats={chatResponse.data} />}
+              {(chatResponse) => <Chat chats={chatResponse.data}/>}
             </Await>
           </Suspense>
         </div>
