@@ -1,6 +1,5 @@
 import HomePage from "./pages/homePage/homePage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
 import ListPage from "./pages/listPage/listPage";
 import Layout from "./pages/layout/layout";
 import SinglePage from "./pages/singlePage/singlePage";
